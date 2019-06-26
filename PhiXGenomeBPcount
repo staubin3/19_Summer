@@ -1,0 +1,8 @@
+BP_count = 0
+#then loop through
+with open('PhiX_genome.fasta') as input:
+	line = input.readline()
+	for line in input:
+		BP_count += len(line.strip())
+
+print(BP_count)
